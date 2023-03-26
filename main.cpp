@@ -162,6 +162,7 @@ int main()
   {
     menu();
     cin >> selection;
+    
     // percabangan dalam pemilihan produk berdasarkan kode produk
     switch (selection)
     {
@@ -172,6 +173,7 @@ int main()
       persediaan_obat(data3);
       cout << endl;
       break;
+        
     case 'b':
       cout << "masukan code (CAPITAL) : ";
       cin >> code_obat;
@@ -211,6 +213,7 @@ int main()
              << endl;
       }
       break;
+        
     case 'c':
       cout << "masukan code (CAPITAL) : ";
       cin >> code_obat;
@@ -243,6 +246,7 @@ int main()
         transaksi(code_obat, jumlah, 1);
       }
       break;
+        
     case 'd':
       cout << "masukan code (CAPITAL) : ";
       cin >> code_obat;
@@ -263,6 +267,7 @@ int main()
         data3.penjualan();
       }
       break;
+        
       // Exit program
     case 'e':
       cout << "terimakasih" << endl
